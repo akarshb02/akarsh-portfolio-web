@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -29,6 +28,16 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "Pontoon.fi DeFi Bridge",
+      description: "Cross-chain bridge platform enabling seamless asset transfers between multiple blockchains with optimized security and minimal fees.",
+      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+      tags: ["React.js", "Web3", "Bridge", "Cross-chain", "DeFi"],
+      demoLink: "https://pontoon.fi/",
+      codeLink: "#",
+      featured: false,
+    },
+    {
+      id: 4,
       title: "Autonomint Web3 Solutions",
       description: "Advanced Web3 application with smart contract integration, wallet connections, and blockchain transaction management.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
@@ -38,7 +47,7 @@ const Projects = () => {
       featured: false,
     },
     {
-      id: 4,
+      id: 5,
       title: "DeFi Wizard Analytics",
       description: "Comprehensive analytics platform for DeFi protocols with real-time data visualization and portfolio tracking.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",

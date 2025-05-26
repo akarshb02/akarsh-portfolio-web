@@ -68,7 +68,7 @@
 }
 
 .skill-pill {
-  @apply py-1 px-3 rounded-full bg-muted text-foreground text-xs font-medium transition-all hover:bg-primary/20;
+  @apply py-1 px-3 rounded-full bg-muted/50 text-foreground text-xs font-medium transition-all hover:bg-primary/20 hover:scale-105;
 }
 
 .section-container {
@@ -76,9 +76,41 @@
 }
 
 .section-title {
-  @apply text-3xl font-bold mb-8 text-foreground;
+  @apply text-3xl sm:text-4xl font-bold mb-8 text-foreground;
 }
 
 .section-subtitle {
   @apply text-lg text-muted-foreground mb-12;
+}
+
+/* Glass effect for cards */
+.glass-effect {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+/* Glow effect */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/80;
 }

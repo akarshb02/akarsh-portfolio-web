@@ -4,6 +4,8 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Mesh } from 'three';
 import { OrbitControls, Float } from '@react-three/drei';
 
+console.log('FloatingCube component loaded');
+
 const AnimatedCube = () => {
   const meshRef = useRef<Mesh>(null);
 
@@ -31,6 +33,8 @@ const AnimatedCube = () => {
 };
 
 const FloatingCube = () => {
+  console.log('FloatingCube rendering');
+  
   return (
     <div className="w-64 h-64 md:w-80 md:h-80">
       <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>

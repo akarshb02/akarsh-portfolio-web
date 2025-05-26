@@ -4,6 +4,8 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
+console.log('ParticleBackground component loaded');
+
 const Particles = () => {
   const ref = useRef<THREE.Points>(null);
   
@@ -40,6 +42,8 @@ const Particles = () => {
 };
 
 const ParticleBackground = () => {
+  console.log('ParticleBackground rendering');
+  
   return (
     <div className="fixed inset-0 -z-10 opacity-30">
       <Canvas camera={{ position: [0, 0, 1] }}>
